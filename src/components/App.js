@@ -63,7 +63,7 @@ class App extends Component {
               posts.map( post => (
                 <Post 
                   key={post.id} 
-                  text={post.text} 
+                  text={JSON.stringify(post.text)} 
                   date={post.date} 
                   updatePostFn={this.updatePost} 
                   id={post.id} 
